@@ -1,0 +1,115 @@
+/* Blue #11639C
+Sky blue #0093E2
+Dark blue #1F3D83
+Grey: #39424E
+light grey: #576871*/
+
+
+body {
+  top:0;
+  left:0;
+  margin:0;
+  background:#0e141e;
+  height:100%; font:13px 'Open Sans', Arial, sans-serif;
+  line-height:20px; color:#fff;
+  font-weight:300;
+  letter-spacing:0.4px;
+}
+h1, h2 {
+  font-family: "Source Code Pro", Monaco, "monospace";
+}
+h1 { font-size: 62px; font-weight: 300; word-spacing:-12px; line-height:88px; margin-left: -8px; letter-spacing: -3px;  }
+h3 { font-size: 24px; font-weight: normal; line-height: 35px; margin-left: -1px;  color:#fff; padding-bottom: 20px; }
+h4 { font-size: 13px; font-weight: normal; text-transform: uppercase; line-height: 20px; letter-spacing: 5px; }
+h5 { font-size: 18px; font-weight: normal; line-height: 25px; margin-left: -1px; color:#0e141e; padding-bottom: 10px; }
+p { font-size: 13px; line-height:25px;font-family: "Source Code Pro"; }
+strong { font-weight:600; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  word-spacing: -8px;
+  line-height: 52px;
+  margin-left: -3px;
+  letter-spacing: -.5px;
+}
+
+h2:after {
+    content: "\258B";
+    color: #32c766;
+    animation: 1.2s blink infinite;
+    animation-name: blink;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    margin-left: 2px;
+}
+
+#home, #data {
+  background-image: url(sample.jpg);
+  height: 1000px;
+  width:100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#data{
+  background-image: url(data1.jpg);
+  height: 600px;
+
+}
+
+#logo {
+  display:block;
+  width:320px;
+  height:42px;
+  position:absolute;
+  left:160px; top:10%;
+  background:url(boenlogo.png);
+  background-size:100%; z-index:2;
+  background-repeat: no-repeat;
+
+}
+
+#home h1 {
+   position:relative;
+   left:160px;
+   top:30%;
+   width: 560px;
+   color:#fff;
+   z-index: 2;
+ }
+ .section {
+   background-color:#0e141e;
+;
+   height: 600px;
+   width:100%;
+   margin-top: -50px;
+
+
+ }
+ .section h2 {
+   position:relative;
+   top:18%;
+   left:160px;
+   width: 560px;
+   color:#fff;
+   z-index: 2;
+ }
+
+ .section p{
+   position:relative;
+   top:25%;
+   left:160px;
+   width: 560px;
+   color:#fff;
+   z-index: 2;
+
+ }
+ #about-2 {
+   background-color: #11639C;
+ }
