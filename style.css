@@ -35,7 +35,7 @@ h2 {
 }
 
 h2:after {
-    content: "\258B";
+    content: " \258B";
     color: #32c766;
     animation: 1.2s blink infinite;
     animation-name: blink;
@@ -112,4 +112,19 @@ h2:after {
  }
  #about-2 {
    background-color: #11639C;
+ }
+ /* Cursor animation */
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+}
+
+ .infogram-embed {
+   top: 50% !important;
+   left:500px;
+   position: relative;
  }
