@@ -62,10 +62,14 @@ h2:after {
   height: 600px;
 
 }
-#data-1, #data-2, #data-3 {
+#data-1, #data-2 {
   background-color: #39424E;
   height:1100px;
 
+}
+#data-3 {
+  background-color: #576871;
+  height:1100px;
 }
 
 .left-section {
@@ -129,7 +133,6 @@ margin-left: 160px;
     margin-top:15%;
     /* max-width: 45%; */
     color:#fff;
-    text-align: center;
 
  }
 
