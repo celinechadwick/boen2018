@@ -24,7 +24,7 @@ h1 { font-size: 62px; font-weight: 300; word-spacing:-12px; line-height:88px; ma
 h3 { font-size: 24px; font-weight: normal; line-height: 35px; margin-left: -1px;  color:#fff; padding-bottom: 20px;}
 h4 { font-size: 13px; font-weight: normal; text-transform: uppercase; line-height: 20px; letter-spacing: 5px; }
 h5 { font-size: 18px; font-weight: normal; line-height: 25px; margin-left: -1px; color:#0e141e; padding-bottom: 10px; }
-p { font-size: 13px; line-height:25px;font-family: "Source Code Pro"; }
+p { font-size: 14px; line-height:25px;font-family: "Source Code Pro"; }
 strong { font-weight:600; }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
 }
 
 h2:after {
-    content: " \258B";
+    content: "\258B";
     color: #32c766;
     animation: 1.2s blink infinite;
     animation-name: blink;
@@ -63,6 +63,9 @@ h2:after {
   background-image: url(data1.jpg);
   height: 600px;
 
+}
+#data p {
+  font-weight: 600;
 }
 #data-1, #data-2 {
   background-color: #39424E;
@@ -114,6 +117,7 @@ float:right;
   height:42px;
   position:relative;
   margin-left:160px;
+  margin-top: 60px;
   top:10%;
   background:url(boenlogo.png);
   background-size:100%; z-index:2;
@@ -123,7 +127,7 @@ float:right;
 
 #home h1 {
    margin-left:160px;
-   margin-top:30%;
+   margin-top:25%;
    max-width: 45%;
    color:#fff;
  }
@@ -143,7 +147,7 @@ float:right;
  }
  .section h4 {
    margin-left:160px;
-   padding-top: 5%;
+   padding-top: 7%;
    max-width: 45%;
    color:#fff;
  }
@@ -165,8 +169,6 @@ float:right;
  }
 
 
-
-
  #about-2 {
    background-color: #11639C;
  }
@@ -179,4 +181,156 @@ float:right;
 @-webkit-keyframes blink {
 	0% { opacity: 1; }
 	50% { opacity: 0; }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1260px) {
+ h2 {
+  font-size: 28px;
+}
+}
+
+@media only screen and (max-width: 1094px) {
+ h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 20px;
+}
+.col-8 {
+  width:100%;
+}
+.col-4 {
+  width:50%;
+  padding-top: 5%;
+  padding-left:160px;
+}
+
+}
+@media only screen and (max-width: 950px) {
+
+ #data-5 {
+  height:1100px;
+}
+#about, #about-2 {
+  height: 700px;
+}
+
+}
+@media only screen and (max-width: 950px) {
+ .section p, .section h2, .section h4, #home h1, #logo {
+   max-width: 60%;
+   margin-left: 100px;
+ }
+ #about, #about-2 {
+   height:600px;
+ }
+ #home {
+   height:1000px;
+ }
+ .left-section {
+   margin-left: 100px;
+   width: 60%;
+ }
+
+ #home h1 {
+   margin-top: 35%;
+ }
+ .col-4 {
+   width:70%;
+   padding-top: 5%;
+   padding-left:100px;
+ }
+
+}
+
+@media only screen and (max-width: 700px) {
+  #home {
+    height:800px;
+  }
+  #home h1 {
+    font-size: 45px;
+  }
+
+  .section h2 {
+    font-size: 25px;
+  }
+  #data-1, #data-2, #data-3 {
+    max-height: 900px;
+  }
+  /* .section p, .section h2, .section h4, #home h1, #logo, .left-section {
+    width: 60%;
+  } */
+}
+@media only screen and (max-width: 540px) {
+  #home h1 {
+    font-size: 30px;
+    word-spacing: 0;
+    letter-spacing: 0;
+    line-height: 84px;
+  }
+  #about, #about-2 {
+    height: 800px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  #home {
+    height: 600px;
+  }
+  #logo{
+    width:60%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .col-4 {
+    padding-left:50px;
+  }
+  #home h1 {
+    font-size: 28px;
+    margin-left: 60px;
+    max-width: 70%;
+    line-height: 64px;
+  }
+  .section p, .section h2, .section h4 {
+    max-width: 80%;
+    margin-left: 50px;
+  }
+  .section h2 {
+    font-size: 20px;
+    letter-spacing: .5px;
+    word-spacing: -4px;
+  }
+  .section h3 {
+    font-size: 15px;
+  }
+  .left-section {
+    margin-left: 50px;
+    width: 80%;
+  }
+  .section {
+    max-height: 1100px;
+  }
+  #data {
+    height:500px;
+  }
+}
+@media only screen and (max-width: 360px) {
+.section h2 {
+  line-height: 45px;
+}
+#home h1{
+  line-height: 48px;
+}
+.section p {
+  font-size: 12px;
+}
+#data-2, #data-3 {
+  height:800px;
+}
+#about, #about-2 {
+  height:700px;
+}
+
 }
