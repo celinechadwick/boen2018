@@ -255,8 +255,12 @@ h3 {
   .section h2 {
     font-size: 25px;
   }
-  #data-1, #data-2, #data-3 {
+  #data-1, #data-2{
     max-height: 900px;
+  }
+
+  #data-3 {
+    height:1000px;
   }
   /* .section p, .section h2, .section h4, #home h1, #logo, .left-section {
     width: 60%;
@@ -276,9 +280,15 @@ h3 {
 }
 
 @media only screen and (max-width: 450px) {
-  #home {
+  #home:after {
     height: 600px;
+    background-image: url(sample.jpg);
+    width:100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
   #logo{
     width:60%;
     margin-left: 50px;
@@ -312,12 +322,18 @@ h3 {
   .section {
     max-height: 1100px;
   }
-  #data {
+  #data:after {
     height:500px;
+    background-image: url(data1.jpg);
+    width:100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
   #about, #about-2 {
     height:700px;
-  } 
+  }
 }
 @media only screen and (max-width: 355px) {
 .section h2 {
@@ -330,7 +346,7 @@ h3 {
   font-size: 12px;
 }
 #data-2, #data-3 {
-  height:800px;
+  height:900px;
 }
 
 
