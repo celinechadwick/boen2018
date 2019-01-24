@@ -26,9 +26,9 @@ h1, h2 {
 }
 h1 { font-size: 62px; font-weight: 300; word-spacing:-12px; line-height:88px; margin-left: -8px; letter-spacing: -3px;  }
 h3 { font-size: 24px; font-weight: normal; line-height: 35px; margin-left: -1px;  color:#fff; padding-bottom: 20px;}
-h4 { font-size: 13px; font-weight: normal; text-transform: uppercase; line-height: 20px; letter-spacing: 5px; }
+h4 { font-size: 14px; font-weight: normal; text-transform: uppercase; line-height: 20px; letter-spacing: 5px; }
 h5 { font-size: 18px; font-weight: normal; line-height: 25px; margin-left: -1px; color:#0e141e; padding-bottom: 10px; }
-p { font-size: 16px; line-height:25px;font-family: "Source Code Pro"; }
+p { font-size: 18px; line-height:25px;font-family: "Source Code Pro"; }
 strong { font-weight:600; }
 
 h2 {
@@ -62,6 +62,7 @@ h2:after {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 #data{
   background-image: url(data1.jpg);
@@ -71,12 +72,10 @@ h2:after {
 }
 #data p {
   font-weight: 600;
-  line-height:1px;
+  line-height:1;
   margin-top:0;
   margin-bottom:0;
   padding-top:40px;
-
-
 
 }
 #data-1, #data-2 {
@@ -246,19 +245,28 @@ h3 {
 
 @media only screen and (max-width: 700px) {
 
-  #home h1 {
-    font-size: 45px;
-  }
 
   .section h2 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
 
   #home, #data {
-    background-attachment: scroll;
+    background-attachment: initial;
+    background-position: center;
   }
+#data {
+  padding:6% 0;
+}
 
+#data p {
+  font-weight: 600;
+  line-height:1;
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:10px;
+
+}
   /* .section p, .section h2, .section h4, #home h1, #logo, .left-section {
     width: 60%;
   } */
@@ -275,14 +283,7 @@ h3 {
 
 
 @media only screen and (max-width: 450px) {
-  #home:after {
-    height: 600px;
-    background-image: url(sample.jpg);
-    width:100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
 
   #logo{
     width:60%;
@@ -303,29 +304,16 @@ h3 {
     margin-left: 50px;
   }
   .section h2 {
-    font-size: 20px;
     letter-spacing: .5px;
     word-spacing: -4px;
   }
-  .section h3 {
-    font-size: 15px;
-  }
+
   .left-section {
     margin-left: 50px;
     width: 80%;
   }
-  .section {
-    max-height: 1100px;
-  }
-  #data:after {
-    height:500px;
-    background-image: url(data1.jpg);
-    width:100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-  }
+
 
 }
 @media only screen and (max-width: 355px) {
@@ -335,9 +323,7 @@ h3 {
 #home h1{
   line-height: 48px;
 }
-.section p {
-  font-size: 12px;
-}
+
 #data-2, #data-3 {
   height:900px;
 }
