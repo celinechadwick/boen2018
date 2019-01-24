@@ -41,7 +41,7 @@ h2 {
 }
 
 h2:after {
-    content: "\258B";
+    content: " \258E";
     color: #32c766;
     animation: 1.2s blink infinite;
     animation-name: blink;
